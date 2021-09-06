@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{cmap}					% поиск в PDF
+\usepackage[english,russian]{babel}
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+
+\usepackage{natbib}
+\usepackage{esvect}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{todonotes}
+\usepackage{hyperref}
+
+\usepackage{fontspec,xltxtra,xunicode,xecyr}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times New Roman}
+\setmonofont[Scale=MatchLowercase]{Courier New}
+
+\author{Алексей Толстиков}
+\title{Специальные структуры данных (подборка материалов)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage\include{complexity_analysis}
+\newpage\include{segment_tree}
+\newpage\include{meet_in_the_middle}
+\newpage\include{bitset}
+
+\newpage\include{references}
+\end{document}
