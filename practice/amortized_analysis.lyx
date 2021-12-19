@@ -1,0 +1,2372 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\size normal
+\lang russian
+Трудоемкость в худшем случае
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang russian
+Вспомнить про 
+\begin_inset Formula $O(n),\,\Theta(n),\,\Omega(n)$
+\end_inset
+
+ + сделать небольшой тест (?).
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Порекомендовать почитать Кормена (глава 3).
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+\begin_inset Formula $\Theta:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\Theta(g(n))=\begin{cases}
+f(n) & if\,\exists c_{1},\,c_{2},\,n_{0}:\,0\leq c_{1}\cdot g(n)\leq f(n)\leq c_{2}\cdot g(n)\,\forall n\geq n_{0}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Поскольку 
+\begin_inset Formula $\Theta(g(n))$
+\end_inset
+
+ представляет собой множество функций, то можно записать 
+\begin_inset Formula $f(n)\in\Theta(g(n))$
+\end_inset
+
+ или 
+\begin_inset Formula $f(n)=\Theta(g(n))$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Говорят, что функция 
+\begin_inset Formula $g(n)$
+\end_inset
+
+ является асимптотически точной оценкой функции 
+\begin_inset Formula $f(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+\begin_inset Formula $O:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+O(g(n))=\begin{cases}
+f(n) & if\,\exists c,\,n_{0}:\,0\leq f(n)\leq c\cdot g(n)\,\forall n\geq n_{0}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula $O$
+\end_inset
+
+-обозначение применяется, когда надо указать верхнюю границу функции с точностью
+ до постоянного множителя.
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+\begin_inset Formula $\Omega:$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\Omega(g(n))=\begin{cases}
+f(n) & if\,\exists c,\,n_{0}:\,0\leq c\cdot g(n)\leq f(n)\,\forall n\geq n_{0}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula $\Omega$
+\end_inset
+
+ - это асимптотическая нижняя граница.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula ${}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Graphics
+	filename img/1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\size normal
+\lang russian
+Амортизационный анализ
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+\color red
+\lang russian
+Вопрос
+\uuline default
+\color inherit
+: зачем вообще он нужен и что это такое?
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Амортизационный анализ (amortized analysis) – метод анализа алгоритмов,
+ позволяющий осуществлять оценку времени выполнения последовательности из
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ операций над некоторой структурой данных.
+ При выполнении амортизационного анализа гарантируется 
+\bar under
+\color red
+средняя производительность в наихудшем случае.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Некоторые операции структуры данных могут иметь высокую вычислительную сложность
+, другие низкую.
+ Например, некоторая операция может подготавливать структуру данных для
+ быстрого выполнения других операций.
+ Такие «тяжелые» операции выполняются редко и могут оказывать незначительное
+ влияние на суммарное время выполнения последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Введен в практику Робертом Тарьяном ( Robert Tarjan ) в 1985 году.
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Вспомнить про вектор (задача, которую разбирали на паре) + предложить придумать
+ способ реализовать вектор с оценкой 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ в худшем случае на добавление элемента в конец (если выделение памяти происходи
+т за константу).
+\end_layout
+
+\begin_layout Section*
+
+\size normal
+\lang russian
+Метод усреднения (метод группового анализа или aggregate analysis)
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Метод усреднения - это метод амортизационного анализа, позволяющий оценивать
+ верхнюю границу времени 
+\begin_inset Formula $T(n)$
+\end_inset
+
+ выполнения последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций в худшем случае.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+В методе усреднения амортизационная стоимость операций определяется следующим
+ образом: суммарная стоимость всех операций алгоритма делится на их количество.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+a=\frac{\sum_{i=1}^{n}t_{i}}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+где 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+- это время выполнения 
+\begin_inset Formula $i$
+\end_inset
+
+-ой операции.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Амортизированная стоимость операции – это оценка сверху среднего времени
+ выполнения операции в худшем случае.
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Задачи
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+стек с операцией multipop
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+двоичный счётчик
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+стек с multipop и multipush
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+счетчик с decrement
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+упражнение
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Стек с multipop.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+push(s, x) // добавляем объект x в стек s
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+pop(s) // 
+\begin_inset Quotes eld
+\end_inset
+
+снимает
+\begin_inset Quotes erd
+\end_inset
+
+ вершину стека (ошибка для пустого стека)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+multipop(s, k) // 
+\begin_inset Quotes eld
+\end_inset
+
+снимает
+\begin_inset Quotes erd
+\end_inset
+
+ k вершин стека 
+\end_layout
+
+\begin_layout Standard
+
+\color purple
+\lang russian
+Спросить про стоимость операций push и pop.
+ Написать псевдокод операции.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+def multipop(s, k):
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+    while empty(s) == False and k > 0:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+        pop(s)
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+        --k
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Количество итераций в цикле будет зависеть от реального количества объектов
+ в стеке и 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ мы их сделаем 
+\begin_inset Formula $\min(size(s),k).$
+\end_inset
+
+ На каждой итерации выполняется однократный вызов операции 
+\begin_inset Formula $pop$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ полная стоимость выполнения операции 
+\begin_inset Formula $multipop$
+\end_inset
+
+ будет равна 
+\begin_inset Formula $\min(size(s),k).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Проанализируем последовательность операций 
+\begin_inset Formula $push,\,pop,\,multipop$
+\end_inset
+
+, действующие на изначально пустой стек.
+ Пусть 
+\begin_inset Formula $n=size(s).$
+\end_inset
+
+ Стоимость операции 
+\begin_inset Formula $mulpipop$
+\end_inset
+
+ в наихудшем случае равна 
+\begin_inset Formula $O(n),$
+\end_inset
+
+так как в стеке не более 
+\begin_inset Formula $n$
+\end_inset
+
+ объектов.
+ Покажем, что произвольная последовательность операций 
+\begin_inset Formula $push,\,pop,\,multipop$
+\end_inset
+
+ не превышает 
+\begin_inset Formula $O(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Каждый помещенный в стек объект может быть извлечен оттуда не более одного
+ раза 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ число вызовов операции 
+\begin_inset Formula $pop$
+\end_inset
+
+ (включая их вызовы в процедуре 
+\begin_inset Formula $multipop$
+\end_inset
+
+) для непустого стека не превышает количество произведенных операций 
+\begin_inset Formula $push$
+\end_inset
+
+, которое, в свою очередь, не больше 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ При любом 
+\begin_inset Formula $n$
+\end_inset
+
+ для выполнения произвольной последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $push,\,pop,\,multipop$
+\end_inset
+
+ требуется суммарное время 
+\begin_inset Formula $O(n)\,\Rightarrow$
+\end_inset
+
+ средняя стоимость будет 
+\begin_inset Formula $\frac{O(n)}{n}=O(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Распишем приведённые рассуждения более формально.
+ Пусть 
+\begin_inset Formula $m$
+\end_inset
+
+ — количество операций, 
+\begin_inset Formula $n$
+\end_inset
+
+ — количество элементов, задействованных в этих операциях.
+ Очевидно, 
+\begin_inset Formula $n⩽m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Тогда:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+a=\frac{\sum_{i=1}^{m}t_{i}}{m}=\frac{\sum_{i=1}^{m}\sum_{j=1}^{n}t_{ij}}{m}=\frac{\sum_{j=1}^{n}\sum_{i=1}^{m}t_{ij}}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+где 
+\begin_inset Formula $t_{ij}$
+\end_inset
+
+ — стоимость 
+\begin_inset Formula $i$
+\end_inset
+
+-ой операции над 
+\begin_inset Formula $j$
+\end_inset
+
+-ым элементом.
+ Величина 
+\begin_inset Formula $\sum_{i=1}^{m}t_{ij}\leq2$
+\end_inset
+
+, так как над элементом можно совершить только две операции, стоимость которых
+ равна 1 (добавили и удалили).
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Тогда: 
+\begin_inset Formula $a\leq\frac{2n}{m}\leq[n\leq m]\leq2=>a=O(1).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+В групповом анализе амортизированная стоимость каждой операции принимается
+ равной ее средней стоимости, поэтому в этом случае все три стековые операции
+ будут характеризоваться одинаковой амортизированной стоимостью 
+\begin_inset Formula $O(1).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Двоичный счётчик.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+В качестве счетчика будем использовать битовый массив 
+\begin_inset Formula $A[0\ldots k-1],$
+\end_inset
+
+ где 
+\begin_inset Formula $A.length=k$
+\end_inset
+
+.
+ Младший бит хранящегося в счетчике бинарного числа 
+\begin_inset Formula $x$
+\end_inset
+
+ находится в элементе 
+\begin_inset Formula $A[0]$
+\end_inset
+
+, старший - в элементе 
+\begin_inset Formula $A[k-1].$
+\end_inset
+
+ 
+\begin_inset Formula $x=\sum_{i=0}^{k-1}A[i]\cdot2^{i}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Изначально 
+\begin_inset Formula $x=0\,\Rightarrow\,A[i]=0,\,i\,\in[0\ldots k-1].$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ x  7 6 5 4 3 2 1 0 | стоимость
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 0  0 0 0 0 0 0 0 0 | 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 1  0 0 0 0 0 0 0 1 | 1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 2  0 0 0 0 0 0 1 0 | 3
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 3  0 0 0 0 0 0 1 1 | 4
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 4  0 0 0 0 0 1 0 0 | 7
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 5  0 0 0 0 0 1 0 1 | 8
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 6  0 0 0 0 0 1 1 0 | 10
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 7  0 0 0 0 0 1 1 1 | 11
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 8  0 0 0 0 1 0 0 0 | 15
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+ 9  0 0 0 0 1 0 0 1 | 16
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+10  0 0 0 0 1 0 1 0 | 18
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+11  0 0 0 0 1 0 1 1 | 19
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+12  0 0 0 0 1 1 0 0 | 22
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+13  0 0 0 0 1 1 0 1 | 23
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+14  0 0 0 0 1 1 1 0 | 25
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+15  0 0 0 0 1 1 1 1 | 26
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+16  0 0 0 1 0 0 0 0 | 31
+\end_layout
+
+\begin_layout Standard
+
+\color purple
+\lang russian
+Предложить реализовать процедуру увеличения счетчика на 1.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Чтобы увеличить показания счетчика на 1 используется следующая процедура
+ :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+def Increment(A):
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+    i = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+    while i < A.length and A[i] == 1:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+        A[i] = 0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+        i += 1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+    if i < A.length
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+        A[i] = 1
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Заметим, что значение всех бит изменяются не при каждом вызове 
+\begin_inset Formula $Increment.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Посмотрим, как часто меняется 
+\begin_inset Formula $A[0],\,A[1]$
+\end_inset
+
+ и т.д.
+ Увидим, что в общем случае для 
+\begin_inset Formula $i=0,\ldots,k-1$
+\end_inset
+
+ бит 
+\begin_inset Formula $A[i]$
+\end_inset
+
+ изменяется 
+\begin_inset Formula $\lfloor\frac{n}{2^{i}}\rfloor$
+\end_inset
+
+ раз в последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ для изначально обнуленного счетчика.
+ Таким образом, общее количество изменений битов при выполнении последовательных
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ равно: 
+\begin_inset Formula 
+\[
+\sum_{i=0}^{k-1}\lfloor\frac{n}{2^{i}}\rfloor<n\sum_{i=0}^{k-1}\frac{1}{2^{i}}<n\sum_{i=0}^{\infty}\frac{1}{2^{i}}=2n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Поэтому время выполнения последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ над изначально обнуленным счетчиком в наихудщем случае равно 
+\begin_inset Formula $O(n).$
+\end_inset
+
+ Средняя стоимость операций равна 
+\begin_inset Formula $a=\frac{O(n)}{n}=O(1).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Стек с multipop и multipush.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Остается ли справедливой амортизированная оценка стоимости стековых операций,
+ равная 
+\begin_inset Formula $O(1),$
+\end_inset
+
+ если включить в множество стековых операций операцию 
+\begin_inset Formula $multipush,$
+\end_inset
+
+ помещающая в стек 
+\begin_inset Formula $k$
+\end_inset
+
+ элементов? 
+\end_layout
+
+\begin_layout Paragraph
+
+\lang russian
+Счетчик с decrement (можно в anytask?).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Покажите, что если бы в примере с 
+\begin_inset Formula $k-$
+\end_inset
+
+битовым счетчиком была включена операция 
+\begin_inset Formula $decrement,$
+\end_inset
+
+то стоимость операций была бы равна 
+\begin_inset Formula $\Theta(kn)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Упражнение (можно в anytask?).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Предположим, что над структурой данных выполняется 
+\begin_inset Formula $n$
+\end_inset
+
+ операций.
+ Стоимость 
+\begin_inset Formula $i-$
+\end_inset
+
+ой по порядку операции равна 
+\begin_inset Formula $i$
+\end_inset
+
+, если 
+\begin_inset Formula $i$
+\end_inset
+
+ - это точная степень двойки, и 1 - иначе.
+ Определить с помощью группового анализа, метода предоплаты и метода потенциалов
+ амортизированную стоимость операции.
+\end_layout
+
+\begin_layout Section*
+
+\size normal
+\lang russian
+Метод предоплаты (accounting method)
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Разные операции будет оцениваться по-разному, в зависимости от их фактической
+ стоимости.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Величина, которая 
+\begin_inset Quotes eld
+\end_inset
+
+начисляется
+\begin_inset Quotes erd
+\end_inset
+
+ на операцию называется амортизированной стоимостью (amortized cost).
+ Если амортизированная стоимость операции превышает ее фактическую стоимость,
+ то соответствующая разность присваивается определенным объектам структуры
+ данных как кредит.
+ Кредит можно использовать впоследствии для компенсирующих выплат на операции,
+ амортизированная стоимость которых меньше их фактической стоимости.
+ Т.о., можно полагать, что амортизированная стоимость операции состоит из
+ ее фактической стоимости и кредита, который либо накапливается, либо расходуетс
+я.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Пусть 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+- это фактическая стоимость 
+\begin_inset Formula $i-$
+\end_inset
+
+ой операции, а 
+\begin_inset Formula $\widehat{c_{i}}-$
+\end_inset
+
+ это ее же амортизированная стоимость.
+ Тогда должно выполняться следующее неравенство:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\begin{equation}
+\sum_{i=1}^{n}\hat{c_{i}}\geq\sum_{i=1}^{n}c_{i}\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Общий кредит, хранящийся в структуре данных вычисляется следующим образом:
+ 
+\begin_inset Formula $credit=\sum_{i=1}^{n}\hat{c_{i}}-\sum_{i=1}^{n}c_{i}$
+\end_inset
+
+.
+ Так как у нас есть неравенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то получаем, что 
+\begin_inset Formula $credit\geq0$
+\end_inset
+
+.
+ Если бы полный кредит в каком-то случае мог стать отрицательным, то полная
+ амортизированная стоимость было бы в этот момент ниже соответствующей фактическ
+ой стоимости.
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Задачи
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+стек с операцией multipop
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+двоичный счетчик
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+рекурсивный обход дерева
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+стек с копированием
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+счетчик с reset
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Stack (multipop).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Фактическая стоимость операция у нас следующая:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+push      1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+pop       1
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+multipop  min(n, k)
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Приведем ниже амортизированные стоимости:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+push      2
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+pop       0
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+multipop  0
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Заметим, что амортизированная стоимость операции 
+\begin_inset Formula $multipop$
+\end_inset
+
+ у нас равна константе, в то время как ее фактическая стоимость - это переменная
+ величина.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+В этой схеме все три амортизированные стоимости равны 
+\begin_inset Formula $O(1),$
+\end_inset
+
+ хотя в общем случае асимптотическое поведение амортизированных стоимостей
+ рассматриваемых операций может быть разным.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Осталось доказать, что любую последовательность операций можно 
+\begin_inset Quotes eld
+\end_inset
+
+оплатить
+\begin_inset Quotes erd
+\end_inset
+
+ путем начисления амортизированных стоимостей.
+ 
+\color purple
+(Предложить порассуждать самим).
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Двоичный счётчик.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Начислим на операцию, при которой биту присваивается значение, амортизированную
+ стоимость, равную двум.
+ Когда бит устанавливается, единица расходуется на саму операцию + получаем
+ еще единицу в кредит для последующего использования (для обнуления).
+ В любой момент времени с каждой единицей в счетчике связана единица в кредит
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ на обнуление бита нет необходимости начислять что-то.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Определим амортизационную стоимость операции 
+\begin_inset Formula $Increment$
+\end_inset
+
+.
+ Стоимость обнуления битов выплачивается из кредита, который мы получили
+ от единичных битов.
+ В процедуре 
+\begin_inset Formula $Increment$
+\end_inset
+
+ в 1 устанавливается не более одного бита, поэтому амортизационная стоимость
+ операции 
+\begin_inset Formula $Increment$
+\end_inset
+
+ не превышает 2.
+ Кредит не может быть отрицательным 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ условие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется.
+ Амортизационная стоимость 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ равна 
+\begin_inset Formula $O(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Рекурсивный обход дерева.
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Стек с копированием.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Предположим, что над стеком выполняется последовательность операций.
+ Размер стека при этом никогда не превышает 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ После каждых 
+\begin_inset Formula $k$
+\end_inset
+
+ операций производится резервное копирование стека.
+ Присвоив различным стековым операциям соответствующие стоимости, покажите,
+ что стоимость 
+\begin_inset Formula $n$
+\end_inset
+
+ стековых операций, включая копирование стека, равна 
+\begin_inset Formula $O(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Счетчик с reset.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Предположим, что нам нужно иметь возможность не только увеличивать показания
+ счетчика, но и сбрасывать его.
+ Считая, что время проверки или модификации одного бита составляют 
+\begin_inset Formula $\Theta(1),$
+\end_inset
+
+ покажите, как осуществить реализацию счетчика в виде массива битов, чтобы
+ выполнение произвольной последовательности из 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ и 
+\begin_inset Formula $Reset$
+\end_inset
+
+ над изначально обнуленным счетчиком потребовало бы время 
+\begin_inset Formula $O(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size normal
+\lang russian
+Метод потенциалов
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Если в методе предоплаты мы использовали кредиты, то в методе потенциалов
+ вводится понятие 
+\begin_inset Quotes eld
+\end_inset
+
+потенциальной энергии
+\begin_inset Quotes erd
+\end_inset
+
+ или 
+\begin_inset Quotes eld
+\end_inset
+
+потенциала
+\begin_inset Quotes erd
+\end_inset
+
+, который можно высвободить для оплаты следующих операций.
+ Этот потенциал связан со структурой в целом, а не с ее отдельными объектами.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Мы начинаем с исходной структуры данных 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+, над которой выполняется 
+\begin_inset Formula $n$
+\end_inset
+
+ операций.
+ Для всех 
+\begin_inset Formula $i=1,2,\ldots,n$
+\end_inset
+
+ обозначим через 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ фактическую стоимость 
+\begin_inset Formula $i$
+\end_inset
+
+-ой операции, а через 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ - структуру данных, которая получается в результате применения 
+\begin_inset Formula $i-$
+\end_inset
+
+ой операции к структуре 
+\begin_inset Formula $D_{i-1}.$
+\end_inset
+
+ Функция потенциала 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ отображает каждую структуру данных 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ на действительно число 
+\begin_inset Formula $\Phi(D_{i}),$
+\end_inset
+
+ которое является потенциалом, связанным с структурой 
+\begin_inset Formula $D_{i}.$
+\end_inset
+
+ Амортизированная стоимость 
+\begin_inset Formula $\hat{c_{i}}$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+-ой операции определяется соотношением: 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\begin{equation}
+\hat{c_{i}}=c_{i}+\Phi(D_{i})-\Phi(D_{i-1})\label{eq: 2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Полная амортизированная стоимость после выполнения 
+\begin_inset Formula $n$
+\end_inset
+
+ операций будет равна:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\begin{equation}
+\sum_{i=1}^{n}\hat{c_{i}}=\sum_{i=1}^{n}(c_{i}+\Phi(D_{i})-\Phi(D_{i-1}))=\sum_{i=1}^{n}c_{i}+\Phi(D_{n})-\Phi(D_{0})\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\begin{equation}
+\Phi(D_{n})\geq\Phi(D_{0})\label{eq:4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Если функцию потенциала определить таким образом, чтобы выполнялось неравенство
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то полная амортизированная стоимость 
+\begin_inset Formula $\sum_{i=1}^{n}\hat{c_{i}}$
+\end_inset
+
+ является верхней границей полной фактической стоимости 
+\begin_inset Formula $\sum_{i=1}^{n}c_{i}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang russian
+Вопрос:
+\color inherit
+ а почему нам важно, чтобы выполнялось 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Так как на практике не всегда известно, сколько операций будет выполнено,
+ то иногда накладывают дополнительные ограничения: 
+\begin_inset Formula $\Phi(D_{i})\geq\Phi(D_{0})$
+\end_inset
+
+.
+ Часто удобно определить 
+\begin_inset Formula $\Phi(D_{0})=0,$
+\end_inset
+
+ а зачем показать, что значение потенциала для всех 
+\begin_inset Formula $i$
+\end_inset
+
+ неотрицательное.
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Задачи
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+стек с операцией multipop
+\end_layout
+
+\begin_layout Enumerate
+
+\lang russian
+двоичный счетчик
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Stack (multipop).
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula $\Phi(D_{0})=0,\,\Phi(D_{i})=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Так как количество объектов в стеке не может быть отрицательным, стеку 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+, полученному после выполнения 
+\begin_inset Formula $i-$
+\end_inset
+
+ой операции, соответствует неотрицательный потенциал.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Вычислим амортизированные стоимости различных стековых операций.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Для 
+\begin_inset Formula $Push$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\Phi(D_{i})-\Phi(D_{i-1})=(n+1)-n=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Вспомним формулу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: 2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда амортизированная оценка для операции 
+\begin_inset Formula $push$
+\end_inset
+
+ будет следующей:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\hat{c_{i}}=c_{i}+\Phi(D_{i})-\Phi(D_{i-1})=1+1=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Предположим, что 
+\begin_inset Formula $i-$
+\end_inset
+
+ая операция над стеком - это 
+\begin_inset Formula $multipop(s,k)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k'=\min(k,n)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $c_{i}=k',\,\Phi(D_{i})-\Phi(D_{i-1})=-k'.\,\hat{c_{i}}=k'-k'=0.$
+\end_inset
+
+ Аналогично для 
+\begin_inset Formula $pop$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Получили, что амортизированная стоимость каждой операции равна 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ + амортизированная стоимость 
+\begin_inset Formula $n$
+\end_inset
+
+ операций равна 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ + выполняются все ограничения на значения потенциалов.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\uuline on
+\color red
+\lang russian
+Вопрос:
+\uuline default
+ 
+\color black
+чему равна полная стоимость выполнения 
+\begin_inset Formula $n$
+\end_inset
+
+ стековых операций 
+\begin_inset Formula $push,\,pop,\,multipop$
+\end_inset
+
+, если предположить, что в начале стек содержит 
+\begin_inset Formula $k$
+\end_inset
+
+ объектов, а в конце 
+\begin_inset Formula $m.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\lang russian
+Двоичный счетчик.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula $k$
+\end_inset
+
+ - количество бит в счетчике.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Потенциал счетчика после выполнения 
+\begin_inset Formula $i-$
+\end_inset
+
+ой операции 
+\begin_inset Formula $Increment$
+\end_inset
+
+ определим как количество 
+\begin_inset Formula $b_{i},$
+\end_inset
+
+содержащихся в счетчике единиц после этой операции.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Пусть 
+\begin_inset Formula $i-$
+\end_inset
+
+ая операция 
+\begin_inset Formula $Increment$
+\end_inset
+
+ обнулит 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ бит.
+ В таком случае фактическая стоимость этой операции не превышает 
+\begin_inset Formula $c_{i}\leq t_{i}+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Если 
+\begin_inset Formula $b_{i}=0,$
+\end_inset
+
+ то входе выполнения 
+\begin_inset Formula $i-$
+\end_inset
+
+ой операции все 
+\begin_inset Formula $k$
+\end_inset
+
+ бит, так что 
+\begin_inset Formula $b_{i-1}=t_{i}=k.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Если 
+\begin_inset Formula $b_{i}>0$
+\end_inset
+
+, то выполняется соотношение 
+\begin_inset Formula $b_{i}\leq b_{i-1}-t_{i}+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\Phi(D_{i})-\Phi(D_{i-1})\leq(b_{i-1}-t_{i}+1)-b_{i-1}=1-t_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\hat{c_{i}}=c_{i}+\Phi(D_{i})-\Phi(D_{i-1})\leq t_{i}+1+1-t_{i}=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Если вначале показание счетчика равно 
+\begin_inset Formula $0$
+\end_inset
+
+, то 
+\begin_inset Formula $\Phi(D_{0})=0.$
+\end_inset
+
+ 
+\begin_inset Formula $\Phi(D_{i})\geq0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Метод потенциалов предоставляет способ анализа счетчика даже для того случая,
+ когда начальное значение счетчика не равно нулю.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Пусть изначально счетчик содержит 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ единиц, а после выполнения 
+\begin_inset Formula $n$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+ - 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $0\leq b_{0},b_{n}\leq k.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Тогда уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать следующим образом:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}c_{i}=\sum_{i=1}^{n}\hat{c_{i}}-\Phi(D_{n})+\Phi(D_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Для всех 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $\hat{c_{i}}\leq2$
+\end_inset
+
+ (получили выше).
+ 
+\begin_inset Formula $\Phi(D_{0})=b_{0},\,\Phi(D_{n})=b_{n}$
+\end_inset
+
+.
+ Получим:
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}c_{i}\leq\sum_{i=1}^{n}2-b_{n}+b_{0}=2n+b_{n}-b_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Так как 
+\begin_inset Formula $0\leq b_{0},b_{n}\leq k$
+\end_inset
+
+, то при 
+\begin_inset Formula $k=O(n)$
+\end_inset
+
+ полная фактическая стоимость равна 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ Другими словами, если выполняется не менее 
+\begin_inset Formula $n=\Omega(k)$
+\end_inset
+
+ операций 
+\begin_inset Formula $Increment$
+\end_inset
+
+, то полная фактическая стоимость независимо от начального показания счетчика
+ равна 
+\begin_inset Formula $O(n).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size normal
+\lang russian
+Стек, очередь, дек с поиском минимального элемента 
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Необходимо добавить операцию поиска минимального элемента в классический
+ интерфейс.
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Стек
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Хотим добавить операции 
+\begin_inset Formula $min(s)$
+\end_inset
+
+, которая будет возвращать минимальный элемент для стека 
+\begin_inset Formula $s$
+\end_inset
+
+ за время 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ + сохранить оценки на 
+\begin_inset Formula $push$
+\end_inset
+
+ и 
+\begin_inset Formula $pop.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Решение: хранить пары 
+\begin_inset Formula $(current\_value,\,current\_min).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Очередь
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Просто очередь на стеках на минимум.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Решение: заведем два стека на минимум 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $s_{2}\text{.}$
+\end_inset
+
+ Добавлять новые элементы будет всегда в стек 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+, а извлекать элементы - только из стека 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+.
+ При этом, если при попытке извлечения элемента из стека 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ он оказался пустым, просто перенесём все элементы из стека 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ в стек 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ (при этом элементы в стеке 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ получатся уже в обратном порядке, что нам и нужно для извлечения элементов;
+ стек 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ же станет пустым).
+ Наконец, нахождение минимума в очереди будет фактически заключаться в нахождени
+и минимума из минимума в стеке 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ и минимума в стеке 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Тем самым, мы выполняем все операции по-прежнему за 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ (по той простой причине, что каждый элемент в худшем случае 1 раз добавляется
+ в стек 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+, 1 раз переносится в стек 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ и 1 раз извлекается из стека 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection*
+
+\size normal
+\lang russian
+Дек
+\end_layout
+
+\begin_layout Standard
+
+\color purple
+\lang russian
+Сказать подумать.
+ Спросить на второй практике
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+empty     // проверка на наличие элементов
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+pushBack  // операция вставки нового элемента в конец
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+popBack  // операция удаления конечного элемента
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+pushFront // операция вставки нового элемента в начало
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang russian
+popFront  // операция удаления начального элемента
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang russian
+Добавить один много раз
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Имеется двоичный счетчик из 
+\begin_inset Formula $k$
+\end_inset
+
+ бит в начальном состоянии 
+\begin_inset Formula $b_{1}b_{2}\ldots b_{k}$
+\end_inset
+
+.
+ Выполним операцию инкремента 
+\begin_inset Formula $n$
+\end_inset
+
+ раз.
+ Определите наибольшее число изменившихся бит за одну операции инкремента
+ и среднее число изменившихся битов.
+\end_layout
+
+\begin_layout Standard
+
+\lang russian
+Заметим, что если 
+\begin_inset Formula $i+1$
+\end_inset
+
+ бит равен 
+\begin_inset Formula $1$
+\end_inset
+
+, то каждое нечетное его изменение повлечет изменение 
+\begin_inset Formula $i$
+\end_inset
+
+-ого бита, если 
+\begin_inset Formula $0$
+\end_inset
+
+ - то каждое четное.
+\end_layout
+
+\end_body
+\end_document
