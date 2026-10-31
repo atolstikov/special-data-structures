@@ -1,0 +1,40 @@
+% Russian adaptation of SDS-en materials/lecture-template/bsu-olymp-core.tex.
+\usepackage{graphicx,float,needspace,lastpage,geometry,etoolbox}
+\geometry{a4paper,left=20mm,right=20mm,top=38mm,bottom=22mm,
+  headheight=20mm,headsep=11mm,footskip=7mm}
+\floatplacement{figure}{H}
+\pagestyle{empty}
+\makeatletter
+\renewcommand{\@oddhead}{%
+  \parbox{\textwidth}{%
+    \noindent
+    \begin{minipage}[c]{32mm}
+      \includegraphics[width=28mm,trim=30mm 10mm 31mm 12mm,clip]{layout/bsu-logo-105-en.png}%
+    \end{minipage}%
+    \begin{minipage}[c]{\dimexpr\textwidth-64mm\relax}
+      \centering\sffamily
+      Специальные структуры данных\\
+      \CourseContext
+    \end{minipage}%
+    \begin{minipage}[c]{32mm}\hspace{0pt}\end{minipage}%
+    \par\vspace{2pt}\hrule
+  }%
+}
+\renewcommand{\@oddfoot}{%
+  \parbox{\textwidth}{%
+    \hrule\vspace{6pt}%
+    \sffamily\footnotesize\noindent
+    \makebox[\textwidth][c]{Страница \thepage\ из \pageref{LastPage}}%
+    \hspace*{-\textwidth}%
+    \makebox[\textwidth][r]{(c) Aleksey Tolstikov}%
+  }%
+}
+\let\@evenhead\@oddhead
+\let\@evenfoot\@oddfoot
+\makeatother
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\setlength{\emergencystretch}{3em}
+\AtBeginEnvironment{Shaded}{\small}
+\AtBeginDocument{\renewcommand{\figurename}{Рисунок}\renewcommand{\tablename}{Таблица}}

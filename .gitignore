@@ -274,3 +274,16 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Local private and historical build materials
+/editions/2022_sds/*.xlsx
+/editions/2023_sds/*.exe
+/editions/2021-build/*.aux
+/.local-review/
+
+# Generated textbook build context
+/book-ru/layout/context.tex
+
+/assessments/
+
+/output/pdf/book-ru/instructor/
